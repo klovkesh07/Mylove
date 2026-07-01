@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Anjali ❤️</title><style>
+body{margin:0;background:#09051a;color:#fff;font-family:Verdana;overflow:hidden}
+.s{display:none;min-height:100vh;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:20px}
+.show{display:flex}.card{background:rgba(255,255,255,.08);padding:25px;border-radius:20px;max-width:700px}
+button{padding:12px 22px;border-radius:30px;border:0;margin:8px;font-size:18px}.yes{background:#3cb371;color:#fff}.no{background:#ff4081;color:#fff;position:relative}
+.heart{position:fixed;top:-10px;animation:f 10s linear infinite} @keyframes f{to{transform:translateY(110vh)}}
+</style></head><body>
+<script>for(let i=0;i<50;i++){let d=document.createElement('div');d.className='heart';d.textContent='💖';d.style.left=Math.random()*100+'vw';d.style.animationDelay=Math.random()*10+'s';document.body.appendChild(d)}</script>
+<div id=a class="s show"><div class=card><h1>💌 A Special Surprise</h1><h2>For Anjali ❤️</h2><p>Mujhe tumse sirf 1 minute chahiye...</p><button onclick="nxt('b')">Open Letter</button></div></div>
+<div id=b class="s"><div class=card><h2>Dear Anjali,</h2><p>Life ka sabse khoobsurat safar wahi hota hai jahan tum saath ho. Mere liye destination se zyada important tum ho. ❤️</p><button onclick="nxt('c')">Next ➜</button></div></div>
+<div id=c class="s"><div class=card><h1>Kya tum mere saath ek beautiful date par chalogi? 🥹</h1><button class=yes onclick="nxt('d')">YES ❤️</button><button id=no class=no>NO 🙈</button><p id=m></p></div></div>
+<div id=d class="s"><div class=card><h1>🎉 Yayyyyy!! 🎉</h1><h2>I Love You Anjali ❤️</h2><p>Wherever I'm with you... that's my favourite place.</p><h3>🌹 Surprise Gift 🌹</h3><p>Lifetime Membership</p><p>✔ Unlimited Love<br>✔ Unlimited Hugs<br>✔ Unlimited Trips</p><h2>— Yours Forever,<br>Lovkesh ❤️</h2></div></div>
+<script>
+function nxt(id){document.querySelectorAll('.s').forEach(x=>x.classList.remove('show'));document.getElementById(id).classList.add('show')}
+let msgs=["Itni aasani se mana nahi 😜","Dil todogi kya? 🥺","Ek baar aur soch lo ❤️","Mujhe pata hai answer YES hi hai 😍"];
+no.onclick=()=>{no.style.position='fixed';no.style.left=Math.random()*80+'vw';no.style.top=Math.random()*80+'vh';m.innerText=msgs[Math.floor(Math.random()*msgs.length)]}
+</script></body></html>
